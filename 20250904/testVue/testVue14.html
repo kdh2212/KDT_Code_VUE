@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id ="app">
+        <ul>
+            <li v-for="(item,index) in myArray">{{index}}:{{item}}</li> 
+            <!-- in은 키워드이다. 하지만 item은 다른 이름으로 해도 된다.-->
+        </ul>
+    </div>
+
+    
+       <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+               myArray:['찜빵','멜론빵','크로아상']
+            },
+            methods:{
+                
+            }
+        });
+
+    </script>
+</body>
+</html>
